@@ -1,0 +1,110 @@
+{% load staticfiles %}
+
+{% block projects %} <!-- Projects start -->
+<section id="projects" class="pfblock">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-sm-6 col-sm-offset-3">
+
+					<div class="pfblock-header wow fadeInUp">
+						<h2 class="pfblock-title">My Projects</h2>
+						<div class="pfblock-line"></div>
+						<div class="pfblock-subtitle">
+							<!-- insert here -->
+						</div>
+					</div>
+
+				</div>
+
+			</div><!-- .row -->
+            
+            
+            <div class="row">
+            <!--Django project    -->
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    
+                    <div class="grid wow zoomIn">
+                        <figure class="effect-bubba">
+                            <img src="{% static "images/Python.png" %}" alt="img01"/>
+                            <figcaption>
+                                <h2><a href="https://github.com/seb3n/personal_website" target="_blank" style="target-new: tab;"><span>Django </span>website</a></h2>
+                                <p>First website I ever created</p>
+                            </figcaption>			
+                        </figure>
+                    </div>
+                    
+                </div>
+
+            <!--Aerodynamics project-->
+                <div class="col-xs-12 col-sm-4 col-md-4">
+            
+                    <div class="grid wow zoomIn">
+                        <figure class="effect-bubba">
+                            <img src="{% static "images/airplane.jpg" %}" alt="img01"/>
+                            <figcaption>
+                                <h2><a href="https://drive.google.com/open?id=0B1ig2NKWzDdnfnBxREowR3BsODRNNWNHd0E0MTFwYVdNcmttT2NyVXYxUnJocXljaVdhaUk&authuser=1" target="_blank" style="target-new: tab;">
+                                    Subsonic <span>Aerodynamics</span></a></h2>
+                                <p>Design and analyzed the aerodynamics of a subsonic business jet capable of 0.8M cruise speed.</p>
+                            </figcaption>			
+                        </figure>
+                    </div>
+                    
+                </div>
+            <!--AT^2 project-->
+                <div class="col-xs-12 col-sm-4 col-md-4">
+            
+                    <div class="grid wow zoomIn">
+                        <figure class="effect-bubba">
+                            <img src="{% static "images/sustainable-energy.jpg" %}" alt="img01"/>
+                            <figcaption>
+                                <h2><a href="https://github.com/r3d5m0k3/appropriate-tech-toolkit" target="_blank" style="target-new: tab;"><span>at<sup>2</sup></span></a></h2>
+                                <p>Appropriate Technology Toolkit: A Sustainable solution to your engineering problems!</p>
+                            </figcaption>			
+                        </figure>
+                    </div>
+                    
+                </div>
+            
+            <!--Microwave antenna project    -->
+                <div class="col-xs-12 col-sm-4 col-md-4">
+            
+                    <div class="grid wow zoomIn">
+                        <figure class="effect-bubba">
+                            <img src="{% static "images/antenna.jpg" %}" alt="img01"/>
+                            <figcaption>
+                                <h2><a href="{% url 'in_progress_page' %}">Microwave <span>Antenna</span></a></h2>
+                                <p>Designed and built a 2.45 GHz microwave waveguide and horn antenna.</p>
+                            </figcaption>			
+                        </figure>
+                        <!-- redirect this link to a upcoming project page -->
+                    </div>
+                    
+                </div>
+             
+            <!--Smart Jacket Project    -->
+                <div class="col-xs-12 col-sm-4 col-md-4">
+            
+                    <div class="grid wow zoomIn">
+                        <figure class="effect-bubba">
+                            <img src="{% static "images/microchip.jpg" %}" alt="img01"/>
+                            <figcaption>
+                                <h2><a href="https://seb3n@bitbucket.org/seb3n/smart_jacket.git"><span>Smart</span>Jacket</a></h2>
+                                <p>Prototype that uses a microcontroller, some attitude sensors,
+                                a gps and a remote control to activate LED lights signals.</p>
+                            </figcaption>			
+                        </figure>
+                    </div>
+                    
+                </div>
+               
+            </div>
+
+
+		</div><!-- .contaier -->
+
+	</section>
+
+{% endblock %}	<!-- Projects end -->
+    
+

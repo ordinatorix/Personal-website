@@ -1,0 +1,24 @@
+
+
+{% block home_page %} <!-- Home start -->
+	<section id="home" class="pfblock-image screen-height">
+        <div class="home-overlay"></div>
+		<div class="intro">
+			{% block home_text %}
+			<div class="start">Hello, my name is S&eacute;bastien Beno&icirc;t and I am an </div>
+			<h1>Aerospace Engineering student <br> Minoring in Physics</h1>
+			<div class="start">    </div>
+			{% endblock %} <!-- endblock: home_text -->
+		</div>
+	{% block home_button %}
+        <a href="#about">
+		<div class="scroll-down"><!-- how do i make this link dynamic? -->
+            <span>
+                <i class="fa fa-angle-down fa-2x"></i>
+            </span>
+		</div>
+        </a>
+	{% endblock %}<!-- endblock: home_button -->
+
+	</section>
+{% endblock %} <!-- Home end -->

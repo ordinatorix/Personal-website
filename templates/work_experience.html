@@ -1,0 +1,57 @@
+{% load staticfiles %}
+{% block work_experience %}	<!-- Work experience start -->
+
+	<section id="work_experience" class="pfblock">
+
+		<div class="container">
+            
+            <div class="row">
+
+				<div class="col-sm-6 col-sm-offset-3">
+
+					<div class="pfblock-header wow fadeInUp">
+						<h2 class="pfblock-title">What people say about me</h2>
+						<div class="pfblock-line"></div>
+						<div class="pfblock-subtitle">
+							<!--"Insert quote here."-->
+						</div>
+					</div>
+
+				</div>
+
+			</div><!-- .row -->
+
+            <div class="row">
+
+			<div id="cbp-qtrotator" class="cbp-qtrotator">
+                <div class="cbp-qtcontent">
+                    <img src="{% static "images/ferrofluid.jpg" %}" alt="client-1" />
+                    <blockquote>
+                      <p>"S&eacute;bastien is an excellent student who works efficiently.
+                      Discipline enables him to make steady progress. When he joined my group,
+                      he designed a procedure to automate our data analysis.
+                      I have no doubt that S&eacute;bastien will succeed to reach his goals."</p>
+                      <footer>Dr Weili Luo, Condensed Matter Physics Research Professor</footer>
+                    </blockquote>
+                </div>
+                <div class="cbp-qtcontent">
+                    <img src="{% static "images/work.png" %}" alt="client-2" />
+                    <blockquote>
+                      <p>Once a graduate student in our group had problem with the camera we used to image the fluid flow. 
+                      I asked S&eacute;bastien to help this graduate student to solve this problem. S&eacute;bastien worked for about a week and fixed the problem.
+                      As a result we saved harddrive space, allowing for more data storage. </p>
+                      <footer>Dr Weili Luo, Condensed Matter Physics Research Professor</footer>
+                    </blockquote>
+                </div>
+
+            </div>		
+
+            </div><!-- .row -->
+
+					
+		</div><!-- .row -->
+	</section>
+
+{% endblock %}	<!-- Work experience end -->
+
+

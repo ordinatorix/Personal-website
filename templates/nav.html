@@ -1,0 +1,39 @@
+
+{% block navigation %} <!-- Navigation start -->
+
+	<header class="header">
+
+		<nav class="navbar navbar-custom" role="navigation">
+
+			<div class="container">
+
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="{% url 'home' %}">Sebastien Benoit</a>
+				</div>
+
+				<div class="collapse navbar-collapse" id="custom-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="{% url 'home'%}">Home</a></li>
+						<li><a href="{% url 'home'%}#about">About</a></li>
+                        <li><a href="{% url 'home' %}#projects">Projects</a></li>
+                       	<li><a href="{% url 'home' %}#skills">Skills</a></li>
+						<li><a href="{% url 'home' %}#work_experience">Work Experience</a></li>
+						<!--<li><a href="{% url 'home' %}#contact">Contact</a></li>-->
+					</ul>
+				</div>
+
+			</div><!-- .container -->
+
+		</nav>
+
+	</header>
+{% endblock %} <!-- Navigation end -->
+
+
+

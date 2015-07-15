@@ -1,0 +1,60 @@
+
+{% block skills %} <!-- Skills start -->
+    
+    <section id="skills" class="pfblock pfblock-gray" >
+		
+			<div class="container">
+			
+				<div class="row skills">
+					
+					<div class="row">
+
+                        <div class="col-sm-6 col-sm-offset-3">
+
+                            <div class="pfblock-header wow fadeInUp">
+                                <h2 class="pfblock-title">My Skills</h2>
+                                <div class="pfblock-line"></div>
+                                <div class="pfblock-subtitle">
+                                    <!-- insert text here -->
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div><!-- .row -->
+					
+					<div class="col-sm-6 col-md-3 text-center">
+						<a href= "{% url 'skills_page' %}#engineering_skills"><span data-percent="70" class="chart easyPieChart" style="width: 140px; height: 140px; line-height: 140px;">
+                            <span class="text-center">Intermediate</span>
+                        </span>
+						<h3 class="text-center">Engineering</h3></a>
+					</div>
+					
+					<div class="col-sm-6 col-md-3 text-center">
+						<a href="{% url 'skills_page' %}#physics_skills"><span data-percent="60" class="chart easyPieChart" style="width: 140px; height: 140px; line-height: 140px;">
+                            <span class="text-center">Intermediate</span>
+                        </span>
+						<h3 class="text-center">Physics</h3></a>
+					</div>
+					
+					<div class="col-sm-6 col-md-3 text-center">
+						<a href="{% url 'skills_page' %}#programming_skills"><span data-percent="35" class="chart easyPieChart" style="width: 140px; height: 140px; line-height: 140px;">
+                            <span class="text-center">Novice</span>
+                        </span>
+						<h3 class="text-center">Programming</h3></a>
+					</div>
+					<div class="col-sm-6 col-md-3 text-center">
+						<a href="{% url 'skills_page' %}#other_skills"><span data-percent="99" class="chart easyPieChart" style="width: 140px; height: 140px; line-height: 140px;">
+                            <span class="text-center">Continous learning</span>
+                        </span>
+						<h3 class="text-center">Other</h3></a>
+					</div>
+					
+				</div><!--End row -->
+			
+			</div>
+		
+    </section>
+    
+{% endblock %} <!-- Skills end -->
+
